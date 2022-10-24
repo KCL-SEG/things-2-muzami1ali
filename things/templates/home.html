@@ -6,6 +6,11 @@
   <h1>
     Things
   </h1>
+  <form> 
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Sign up">
+  </form> 
   <p>Some stuff about things goes here.</p>
 </body>
 </html>
